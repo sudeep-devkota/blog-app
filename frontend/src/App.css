@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+
+ 
+ 
+  background-color:oklch(0.205 0 0);
+  color: #fff;
+  
+}
+html{
+  overflow-x: hidden;
+}
+:root{
+  --purple-500 : #9333ea;
+  --purple-600: #6d28d9;
+  --bg-2: #0c0c0c;
+}
+.navbar{
+  margin: 10px;
+  
+}
+  .navlink{
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+position: relative;
+transition: ease-in .3s;
+    
+  }
+  .navlink::after{
+    position: absolute;
+    content: '';
+   width: 0;
+   height: 3px;
+   bottom: -5px;
+   left: 0;
+   background-color: #fff;
+   transition: ease-in .3s;
+   background-color: var(--purple-500);
+ 
+    
+  }
+  .navlink:hover::after{
+    width: 100%;
+   
+
+
+    
+    
+  }
+  .navlink:hover{
+    color: var(--purple-500);
+  }
+  .navlink.active::after{
+    width: 100%;
+  }
+  .navlink.active{
+    color: var(--purple-500);
+  }
+  .sp-text{
+    color: var(--purple-600);
+  }
+  .btnNormal{
+    background-color: var(--purple-500);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in .3s;
+  }
+  .btnNormal:hover{
+    background-color: var(--purple-600);
+  }
+  .btnWhite{
+    background-color: #fff;
+    color: var(--purple-500);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in .3s;
+  }
+  .btnWhite:hover{
+    background-color: var(--purple-600);
+    color: #fff;
+  }
+  .blog-header h1{
+ 
+    margin-left: 1.2rem;
+  }
+  .blog-container{
+    display:grid;
+    
+    grid-template-columns: auto auto auto auto;
+
+    gap: 1.2rem;
+    padding: 1.2rem;  
+  
+  }
+  .blogs{
+    background-color: var(--bg-2);
+    padding:20px;
+    transition: ease-in .3s;
+  }
+  .blogs:hover{
+
+   transform:translateY(-3%);
+   box-shadow: 0 0 10px 0 var(--purple-500);
+
+  }
+ .inputbox{
+ border: 1px solid grey;
+ padding: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border-radius: 5px;
+ margin-left: 10px;
+
+ }
+ 
+ .inputbox input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 100%;
+  margin-left: 10px;
+ }
+
+ 
+  .signup{
+    
+    margin-bottom: 1.2rem;
+  }
+ .cont{
+  padding: 1.2rem;
+
+ }
+ textarea{
+  border: 1px solid grey;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 100%;
+  margin-bottom: 1.2rem;
+ }
+ .btnNormall{
+  margin-top: 10px;
+ }
+ .hehe{
+  margin-top: 10px;
+ }
+ .image{
+  margin-top: 10px;
+ }
