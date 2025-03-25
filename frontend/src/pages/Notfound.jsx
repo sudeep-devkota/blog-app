@@ -2,7 +2,7 @@ import React from 'react'
 
  export  function Notfound() {
   return (
-    <div>Notfound</div>
+    <div>sorry the page is not availabe </div>
   )
 }
 

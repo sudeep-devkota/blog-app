@@ -1,16 +1,24 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { use, useState } from "react";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 import Logo from "../images/Logo.png";
 import axios from "axios";
 import { BASE_URL } from "../helper";
+import { set } from "mongoose";
+
+import { useEffect } from "react";
+
 
 function Login() {
+  
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
+  const Navigate = useNavigate();
   const handleSubmit = async (e) => {
+
     e.preventDefault();
 
     try {
@@ -22,22 +30,17 @@ function Login() {
             console.log(response.data);
             if (response.data.success) {
               localStorage.setItem("token", response.data.token); // Store the token in local storage
-              alert("Login successful!"); // Show success message
-              window.location.href = "/"; // Redirect to home page
+              alert("Login successful!"); 
+              Navigate('/home');// Show success message
+        
             } else {
               alert(response.data.message); // Show error message
             }
           })
-          .catch((error) => {
-            console.error(
-              "Error:",
-              error.response ? error.response.data : error
-            );
-            alert(error.response?.data?.message || "Login failed"); // Show error message
-          });
+          // Show error message
     } catch (error) {
-      console.error("Error:", error);
-      alert("Login failed"); // Show error message
+      console.error("Error:", error.response ? error.response.data : error);
+      setError(error.response?.data?.message || "Login failed"); // Show error message
     }
   };
 
