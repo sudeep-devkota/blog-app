@@ -77,7 +77,7 @@ function SignUp() {
       </div>
       <div className='text-red-400'>{error}</div>
     
-<p  className='text-gray-400 flex justify-center'>Already have an account?<Link className='text-blue-400' to="/login">Login</Link></p>
+<p  className='text-gray-400 flex justify-center'>Already have an account?<Link className='text-blue-400' to="/">Login</Link></p>
       
 <div className=' signup  justify-center mb-4'>
       <button type="submit" className='btnNormal w-[90%]' >Sign Up</button>

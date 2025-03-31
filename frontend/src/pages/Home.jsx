@@ -10,9 +10,7 @@ function Home() {
     <>
 <Navbar/>
 <Hero   />
-{
-  
-}
+
 <Blogs />
 <Footer   />
     

@@ -20,12 +20,9 @@ html{
   --purple-600: #6d28d9;
   --bg-2: #0c0c0c;
 }
-.navbar{
-  margin: 10px;
-  
-}
+
   .navlink{
-    margin: 10px;
+    margin: 0.6rem;
     text-decoration: none;
     color: #fff;
 position: relative;
@@ -68,9 +65,9 @@ transition: ease-in .3s;
   .btnNormal{
     background-color: var(--purple-500);
     color: #fff;
-    padding: 10px 20px;
+    padding: 0.6rem 1.2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     cursor: pointer;
     transition: ease-in .3s;
   }
@@ -80,9 +77,9 @@ transition: ease-in .3s;
   .btnWhite{
     background-color: #fff;
     color: var(--purple-500);
-    padding: 10px 20px;
+    padding: 0.6rem 1.2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     cursor: pointer;
     transition: ease-in .3s;
   }
@@ -161,5 +158,20 @@ transition: ease-in .3s;
   margin-top: 10px;
  }
  .image{
+  margin-top: 10px;
+ }
+ .blog-card{
+  margin-top: 10px;
+  transition: ease-in .3s;
+  transform: rotateX('0deg');
+  border: #9333ea solid 1px;
+  padding: 1.2rem;
+
+ }
+ .blog-card :hover{
+  transform:translateY(-3%);
+ 
+ }
+ blog-card-container{
   margin-top: 10px;
  }
