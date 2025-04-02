@@ -5,7 +5,7 @@ import Website from "../images/Website.jpeg";
 import { useParams } from "react-router-dom";
 import { BASE_URL } from "../helper";
 import axios from "axios";
-import { set } from "mongoose";
+
 import parse from "html-react-parser";
 
 const SingleBlog = () => {
