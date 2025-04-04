@@ -16,11 +16,16 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-
 app.use(cors({
-  origin: "https://blog-app-kl9i.vercel.app/", // Replace with your actual frontend URL
-  credentials: true
+    origin:['http://localhost:5000',
+    "https://blog-app-gyu7.onrender.com"],
+    
+
+
 }));
+
+
+
 
 app.use('/api/users',userRoute);
 
