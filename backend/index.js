@@ -20,7 +20,8 @@ app.use(express.urlencoded({extended:true}));
 app.use(cors({
     origin: [
       'http://localhost:5000',
-      'https://blog-app-kl9i.vercel.app'
+      'https://blog-app-kl9i.vercel.app',
+      'https://blog-app-kl9i-olqo24qqv-sudeep-devkotas-projects.vercel.app',
     ],
     credentials: true
   }));
