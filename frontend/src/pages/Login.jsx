@@ -31,6 +31,7 @@ function Login() {
             if (response.data.success) {
               localStorage.setItem("token", response.data.token); // Store the token in local storage
               alert("Login successful!"); 
+              console.log(`${BASE_URL}`);
               Navigate('/home');// Show success message
         
             } else {
