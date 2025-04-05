@@ -18,14 +18,20 @@ app.use(express.urlencoded({extended:true}));
 
     
 app.use(cors({
-    origin: [
-      'http://localhost:5000',
-      'https://blog-app-kl9i.vercel.app',
-      'https://blog-app-kl9i-olqo24qqv-sudeep-devkotas-projects.vercel.app',
-    ],
-    credentials: true
-  }));
-    
+  origin: [
+    'http://localhost:5173', // for local dev
+    'https://blog-app-kl9i.vercel.app', // your Vercel frontend
+    'https://blog-app-kl9i-xxxxx-sudeep-devkotas-projects.vercel.app' // any Vercel preview deployments
+  ],
+  credentials: true
+}));app.use(cors({
+  origin: [
+    'http://localhost:5173', // for local dev
+    'https://blog-app-kl9i.vercel.app', // your Vercel frontend
+    'https://blog-app-kl9i-xxxxx-sudeep-devkotas-projects.vercel.app' // any Vercel preview deployments
+  ],
+  credentials: true
+}));
 
 
 

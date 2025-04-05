@@ -58,7 +58,7 @@ function UpdateBlog() {
         e.preventDefault();
 
         const formData = new FormData();
-        formData.append("title", post.title);
+       formData.append("title", post.title);
         formData.append("description", post.description);
         formData.append("content", post.content);
         formData.append("date", post.date);
@@ -67,8 +67,12 @@ function UpdateBlog() {
         }
 else{
     formData.append("image", post.image);
+    
 }
-      
+
+
+  
+
         try {
             let response=await axios.put(`${BASE_URL}/api/users/updateblog/${blogId}`,
 
