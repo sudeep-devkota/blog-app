@@ -14,6 +14,7 @@ function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const[error,setError]= useState('');
+  const[success,setSuccess]= useState('');
 
 
   const navigate = useNavigate();
