@@ -142,6 +142,7 @@ function UploadBlog() {
       if(response.data.success){
         alert("Blog deleted successfully");
         fetchblog();
+        navigate('/uploadblog');
       }
       }catch(error){
         setError(error.response?.data?.message || "Error deleting blog"); 
